@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background-color: #b949f5;
+  display: flex;
+  height: 100vh;
+  transition: background 0.5s ease;
+  position: relative;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-name,
+.field-email,
+.field-service,
+.field-message,
+.field-finish {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+  height: 50px;
+  width: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.field-name i,
+.field-email i,
+.field-service i,
+.field-message i,
+.field-finish i {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.field-name input,
+.field-email input,
+.field-service input,
+.field-message input {
+  background: none;
+  border: none;
+  flex: 1;
+  height: 100%;
+  outline: none;
+}
+
+.field-name,
+.field-email,
+.field-service,
+.field-message {
+  display: flex;
+}
+
+div.innactive {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 50%);
+}
+
+div.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=/style.97fcb138.css.map */
