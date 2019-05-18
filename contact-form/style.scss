@@ -6,15 +6,27 @@
 
 body {
     background-color: #b949f5;
-    display: flex;
     height: 100vh;
-    transition: background 0.5s ease;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #contact-form {
     display: flex;
     flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50vh;
+    width: 50vw;
+    border: 2px dashed black;
+    .field-message {
+        width: 500px;
+        height: 120px;
+    }
 }
 
 .field-name,
@@ -30,10 +42,6 @@ body {
     background: #fff;
     height: 50px;
     width: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .field-name i,
@@ -56,14 +64,6 @@ body {
     outline: none;
 }
 
-.field-name,
-.field-email,
-.field-service,
-.field-message {
-    display: flex;
-}
-
-
 div.innactive {
     opacity: 0;
     pointer-events: none;
@@ -78,13 +78,13 @@ div.active {
 
 @keyframes shake{
     0%{
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
     50%{
-        transform: translate(-50%, -50%) rotate(10deg);
+        transform: rotate(2deg);
     }
     100%{
-        transform: translate(-50%, -50%) rotate(0deg);
+        transform: rotate(0deg);
     }
 }
 

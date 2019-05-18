@@ -52,7 +52,7 @@ function nextSlide(parent, nextForm){
 }
 
 function error(color){
-    document.body.style.backgroundColor = color;
+    document.getElementById("contact-form").style.backgroundColor = color;
 }
 
 animatedForm();
